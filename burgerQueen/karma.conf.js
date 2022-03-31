@@ -33,6 +33,14 @@ module.exports = function (config) {
       ]
     },
     reporters: ['progress', 'kjhtml'],
+    check: {
+      global: {
+        statements: 70,
+        branches: 70,
+        functions: 70,
+        lines: 70
+      }
+    },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
